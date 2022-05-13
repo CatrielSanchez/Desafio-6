@@ -1,0 +1,61 @@
+/* Footer */
+
+footer {
+    background-image: linear-gradient(to bottom, rgb(195, 160, 252), rgb(66, 29, 126));
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+
+    a {
+        p{
+            color: rgb(238, 228, 228);
+        }
+       
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+        box-sizing: unset;
+
+        &:hover {
+            transform: scale(1.25);
+            transition: all 1s;
+        }
+
+        &.fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        &.fa-facebook {
+            background: #5881da;
+            color: white;
+        }
+
+        &.fa-map-marker {
+            background: #ec390c;
+            color: rgb(247, 248, 247);
+        }
+
+        &.fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        &.fa-whatsapp {
+            background-color: rgb(12, 219, 12);
+            color: white;
+        }
+
+    }
+}
+
+/* Fin Footer */

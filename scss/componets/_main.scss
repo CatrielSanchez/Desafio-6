@@ -1,0 +1,151 @@
+/* Main */
+
+main {
+    border-radius: 2%;
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #DFE1FE, #8d8ea0);
+    -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+
+    section {
+        h2 {
+            color: #F82331;
+            margin: 5px 5px 10px 5px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        article {
+            background-color: rgb(245, 235, 235);
+            padding: 5px 10px 5px 10px;
+            margin: 20px 15px 10px 15px;
+            border-radius: 20PX;
+            -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+            box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+            overflow: hidden;
+
+            p {
+                color: rgb(49, 48, 48);
+                font-size: 15px;
+                text-align: justify;
+            }
+
+            h3 {
+                color: #ac76f8;
+                text-align: center;
+                font-size: 25px;
+                margin: 15px 0 15px 0;
+            }
+
+            h4 {
+                color: #b990f3;
+                text-align: start;
+                font-size: 20px;
+                margin: 15px 0 15px 50px;
+            }
+        }
+
+        .ul-container li {
+            list-style: circle;
+            margin: 15px 0 15px 20px;
+            color: rgb(116, 115, 115);
+            font-size: 15px;
+        }
+
+        .consult a {
+            text-decoration: none;
+            text-align: center;
+            font-size: xx-large;
+            color: #7922f3;
+        }
+
+        .consult:hover {
+            transform: scale(1.25);
+            transition: all 1.25s;
+        }
+
+        a:hover {
+            color: rgb(245, 184, 184);
+            transition: all 0.5s;
+        }
+
+        .form-container {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .form-container label {
+            color: #7922f3;
+        }
+
+        .input {
+            background-color: blue;
+            color: white;
+        }
+
+        .input:hover {
+            transform: scale(1.05);
+            transition: all 1s;
+        }
+
+
+    }
+
+    @media screen and (min-width:451px) {
+        section {
+            h2 {
+                font-size: 32px;
+            }
+
+            article {
+                P {
+                    font-size: 15px;
+                }
+
+                h3 {
+                    font-size: 28px;
+                }
+
+                h4 {
+                    font-size: 23px;
+                }
+
+                .ul-container li {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        section {
+            h2 {
+                font-size: 40px;
+            }
+
+            article {
+                P {
+                    font-size: 25px;
+                }
+
+                h3 {
+                    font-size: 35px;
+                }
+
+                h4 {
+                    font-size: 30px;
+                }
+
+                .ul-container li {
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+}
