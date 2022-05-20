@@ -1,21 +1,22 @@
 /* Main */
 
+@import '../base/mapas.scss';
+@import '../base/extends';
+@import '../base/mixin';
+
 main {
     border-radius: 2%;
     margin: 10px;
     padding: 10px;
     background-image: linear-gradient(to bottom, #DFE1FE, #8d8ea0);
-    -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    @extend %shadow;
     overflow: hidden;
 
     section {
         h2 {
-            color: #F82331;
+            @include text (#F82331, center);
             margin: 5px 5px 10px 5px;
             font-size: 25px;
-            text-align: center;
         }
 
         article {
@@ -23,20 +24,16 @@ main {
             padding: 5px 10px 5px 10px;
             margin: 20px 15px 10px 15px;
             border-radius: 20PX;
-            -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-            box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+            @extend %shadow;
             overflow: hidden;
 
             p {
-                color: rgb(49, 48, 48);
+                @include text (rgb(49, 48, 48), justify);
                 font-size: 15px;
-                text-align: justify;
             }
 
             h3 {
-                color: #ac76f8;
-                text-align: center;
+                @include text (#ac76f8, center);
                 font-size: 25px;
                 margin: 15px 0 15px 0;
             }
@@ -57,10 +54,10 @@ main {
         }
 
         .consult a {
-            text-decoration: none;
-            text-align: center;
-            font-size: xx-large;
-            color: #7922f3;
+            text-decoration: map-get($boton, text-dec);
+            text-align: map-get($boton, text-al);
+            font-size: map-get($boton, font);
+            color: map-get($boton, color);
         }
 
         .consult:hover {

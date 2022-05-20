@@ -50,36 +50,36 @@ header nav div span a {
 }
 
 /* Main */
+main section article, main {
+  -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+}
+
 main {
   border-radius: 2%;
   margin: 10px;
   padding: 10px;
   background-image: linear-gradient(to bottom, #DFE1FE, #8d8ea0);
-  -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
   overflow: hidden;
 }
 main section h2 {
   color: #F82331;
+  text-align: center;
   margin: 5px 5px 10px 5px;
   font-size: 25px;
-  text-align: center;
 }
 main section article {
   background-color: rgb(245, 235, 235);
   padding: 5px 10px 5px 10px;
   margin: 20px 15px 10px 15px;
   border-radius: 20PX;
-  -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
   overflow: hidden;
 }
 main section article p {
   color: rgb(49, 48, 48);
-  font-size: 15px;
   text-align: justify;
+  font-size: 15px;
 }
 main section article h3 {
   color: #ac76f8;
