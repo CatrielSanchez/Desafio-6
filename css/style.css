@@ -50,7 +50,7 @@ header nav div span a {
 }
 
 /* Main */
-main section article, main {
+footer, main section article, main {
   -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
@@ -66,8 +66,8 @@ main {
 main section h2 {
   color: #F82331;
   text-align: center;
-  margin: 5px 5px 10px 5px;
   font-size: 25px;
+  margin: 5px 5px 10px 5px;
 }
 main section article {
   background-color: rgb(245, 235, 235);
@@ -165,12 +165,15 @@ main section .input:hover {
 }
 
 /* Footer */
-footer {
-  background-image: linear-gradient(to bottom, rgb(195, 160, 252), rgb(66, 29, 126));
-  border-radius: 20px;
+footer, main, main section article {
   -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  background-image: linear-gradient(to bottom, rgb(195, 160, 252), rgb(66, 29, 126));
+  border-radius: 20px;
   overflow: hidden;
 }
 footer a p {

@@ -1,23 +1,23 @@
 /* Footer */
 
+@import '../base/mixin';
+@import '../base/extends';
+
 footer {
     background-image: linear-gradient(to bottom, rgb(195, 160, 252), rgb(66, 29, 126));
     border-radius: 20px;
-    -webkit-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 2px 24px -7px rgba(0, 0, 0, 0.75);
+    @extend %shadow;
     overflow: hidden;
 
     a {
-        p{
+        p {
             color: rgb(238, 228, 228);
         }
-       
     }
 
     .fa {
         padding: 20px;
-        font-size: 30px;
+        @include font (30px);
         width: 30px;
         text-align: center;
         text-decoration: none;

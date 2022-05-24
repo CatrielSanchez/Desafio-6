@@ -4,3 +4,7 @@
     color: $color;
     text-align: $text;
 }
+
+@mixin font ($font){
+    font-size: $font;
+}

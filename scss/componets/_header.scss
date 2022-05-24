@@ -1,5 +1,7 @@
 /* Header */
 
+@import '../base/mixin';
+
 header {
     background-image: linear-gradient(to top, #4cb4ad, #DFFEFC);
     border-radius: 10px;
@@ -10,7 +12,7 @@ header {
         div {
 
             .tittle {
-                font-size: 30px;
+                @include font (30px);
                 color: rgb(151, 70, 161) !important;
             }
 
@@ -18,7 +20,7 @@ header {
             ul {
                 li {
                     a {
-                        font-size: 12px;
+                        @include font (12px);
                     }
                 }
             }
@@ -26,7 +28,7 @@ header {
             span {
                 a {
                     text-decoration: none;
-                    font-size: 15px;
+                    @include font (15px);
                     opacity: 60%;
                 }
             }
@@ -34,17 +36,17 @@ header {
 
     }
 
-    @media screen and (min-width:451px){
+    @media screen and (min-width:451px) {
         nav {
             div {
                 .tittle {
-                    font-size: 40px;                         
+                    @include font (40px);
                 }
 
                 ul {
                     li {
                         a {
-                            font-size: 15px;
+                            @include font (15px);
                         }
                     }
                 }
@@ -53,22 +55,22 @@ header {
     }
 
 
-    @media screen and (min-width: 768px) {       
-            nav {
-                div {
-                    .tittle {
-                        font-size: 45px;                         
-                    }
+    @media screen and (min-width: 768px) {
+        nav {
+            div {
+                .tittle {
+                    @include font (45px);
+                }
 
-                    ul {
-                        li {
-                            a {
-                                font-size: 20px;
-                            }
+                ul {
+                    li {
+                        a {
+                            @include font (20px);
                         }
                     }
                 }
             }
         }
-    
+    }
+
 }

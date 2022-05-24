@@ -15,8 +15,8 @@ main {
     section {
         h2 {
             @include text (#F82331, center);
+            @include font (25px);
             margin: 5px 5px 10px 5px;
-            font-size: 25px;
         }
 
         article {
@@ -29,19 +29,18 @@ main {
 
             p {
                 @include text (rgb(49, 48, 48), justify);
-                font-size: 15px;
+                @include font (15px);
             }
 
             h3 {
                 @include text (#ac76f8, center);
-                font-size: 25px;
+                @include font (25px);
                 margin: 15px 0 15px 0;
             }
 
             h4 {
-                color: #b990f3;
-                text-align: start;
-                font-size: 20px;
+                @include text (#b990f3, start);
+                @include font (20px);
                 margin: 15px 0 15px 50px;
             }
         }
@@ -50,7 +49,7 @@ main {
             list-style: circle;
             margin: 15px 0 15px 20px;
             color: rgb(116, 115, 115);
-            font-size: 15px;
+            @include font (15px);
         }
 
         .consult a {
@@ -96,24 +95,24 @@ main {
     @media screen and (min-width:451px) {
         section {
             h2 {
-                font-size: 32px;
+                @include font (32px);
             }
 
             article {
                 P {
-                    font-size: 15px;
+                    @include font (15px);
                 }
 
                 h3 {
-                    font-size: 28px;
+                    @include font (28px);
                 }
 
                 h4 {
-                    font-size: 23px;
+                    @include font (23px);
                 }
 
                 .ul-container li {
-                    font-size: 20px;
+                    @include font (20px);
                 }
             }
         }
@@ -122,24 +121,24 @@ main {
     @media screen and (min-width: 768px) {
         section {
             h2 {
-                font-size: 40px;
+                @include font (40px);
             }
 
             article {
                 P {
-                    font-size: 25px;
+                    @include font (25px);
                 }
 
                 h3 {
-                    font-size: 35px;
+                    @include font (35px);
                 }
 
                 h4 {
-                    font-size: 30px;
+                    @include font (30px);
                 }
 
                 .ul-container li {
-                    font-size: 20px;
+                    @include font (20px);
                 }
             }
 
