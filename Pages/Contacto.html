@@ -12,7 +12,8 @@
     Confío en mí.
     Eso es importante.
     ">
-    <meta name="keywords" content="reiki, Shantala, masaje Shantala, universo, hija de la nueva luna, energia, sol, luna, astros, emociones, conecxion, espiritu, alma, cursos, consultas, terapias,">
+    <meta name="keywords"
+        content="reiki, Shantala, masaje Shantala, universo, hija de la nueva luna, energia, sol, luna, astros, emociones, conecxion, espiritu, alma, cursos, consultas, terapias,">
     <meta property:'og:type' content="web site">
     <meta property:'og:title' content="Hija de la nueva Luna | Yamila Sánche">
     <link rel="shortcut icon"
@@ -33,7 +34,9 @@
     <header class="animate__animated animate__fadeIn">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand animate__animated animate__backInLeft" href="../index.html"><h1 class="tittle">Hija de la nueva Luna</h1></a>
+                <a class="navbar-brand animate__animated animate__backInLeft" href="../index.html">
+                    <h1 class="tittle">Hija de la nueva Luna</h1>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -74,14 +77,25 @@
         <section>
             <h2>Dejanos tu consulta</h2>
             <article>
-                <form class="form-container">
-                    <label>Email :</label>
-                    <input type="Email"><br>
-                    <label>Tel :</label>
-                    <input type="number"><br>
-                    <label>Consulta :</label>
-                    <input type="text"><br>
-                    <input class="input" type="submit"><br>
+                <form action="/server/" method="post" class="form-container">
+                    <div>
+                        <label for="full-name">Nombre Completo:</label>
+                        <input type="text" id="full-name" placeholder="Nombre Completo" required>
+                        <label for="mail">Email:</label>
+                        <input type="Email" id="mail" placeholder="mail@gmail.com" required>
+                        <label for="number">Tel:</label>
+                        <input type="number" id="number" placeholder="ej:1121823733" required>
+                        <label for="opciones">Me interesa saber sobre:</label>
+                        <select name="opciones" id="opciones">
+                            <option value="Terapia de Reiki">Terapia de Reiki</option>
+                            <option value="Terapia de Masaje Shantala">Terapia de Masaje Shantala</option>
+                            <option value="Curso de Reiki">Curso de Reiki</option>
+                            <option value="Curso de Masaje Shantala">Curso de Masaje Shantala</option>
+                        </select><br>
+                        <label for="consult">Consulta:</label>
+                        <textarea name="consult" id="consult" cols="30" rows="10" placeholder="Dejanos tu consulta" required></textarea>
+                        <button class="input" type="submit">Enviar</button>
+                    </div>
                 </form>
             </article>
         </section>

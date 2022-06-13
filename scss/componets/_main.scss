@@ -73,10 +73,17 @@ main {
             display: flex;
             text-align: center;
             justify-content: space-between;
+            margin: 10px 10px 10px 10px;
         }
 
         .form-container label {
             color: #7922f3;
+        }
+
+        .form-container textarea{
+           resize: none; 
+           min-height: 200px;
+           width: 100%;
         }
 
         .input {
@@ -115,6 +122,10 @@ main {
                     @include font (20px);
                 }
             }
+
+            .form-container {               
+                margin: 10px 10px 10px 15px;
+            }
         }
     }
 
@@ -140,6 +151,10 @@ main {
                 .ul-container li {
                     @include font (20px);
                 }
+            }
+
+            .form-container {               
+                margin: 10px 10px 10px 300px;
             }
 
         }
